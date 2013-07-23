@@ -1,0 +1,286 @@
+/* 
+	Contract Styles 
+*/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+/* 
+	Structure 
+*/
+body, input, select  { 
+    font-family:"Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+html, body  { 
+    height:100%;
+}
+
+body {
+	background:#ffffff;
+	color:#666666;
+	font-size:12px;
+	-moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:        border-box;
+}
+    /*Opera Fix*/
+    body:before {/* thanks to Maleika (Kohoutec)*/
+        content:"";
+        height:100%;
+        float:left;
+        width:0;
+        margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+    }
+
+#header {
+    padding-top:20px;
+}
+#main {
+    background:#fff url('../assets/bg-top.png') repeat-x left top;
+    padding:25px 0;
+    min-width:780px;
+}
+    .content {
+        margin:0 auto;
+        width:100%;
+        max-width:960px;
+        min-width:780px;
+        clear:both;
+        overflow:auto;
+    }
+
+#main-footer {
+    background:url("../assets/bg-bottom.png") repeat-x scroll left bottom #FFFFFF;
+    padding:65px 0;
+    clear:both;
+    min-width:780px;
+}
+    
+/* 
+	Footer 
+*/
+footer {
+    width:100%;
+    max-width:960px;
+    min-width:780px;
+    margin:0 auto;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+        .footer-logo, footer p, footer ul {
+            float: right;
+        }
+        
+    footer {
+        font-size: 0.8461em;
+        font-weight: bold;
+    }
+    footer, footer a {
+        color: #999999;
+    }
+    footer a {
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    footer p {
+        margin: 50px 0 0 25px;
+    }
+    
+
+/* 
+	Elements 
+*/
+
+h1, h2 {
+    color:#7FB219;
+    font-size:21px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+h3, h4 {
+    color:#434440;
+    font-weight:bold;
+    font-size:16px;
+    margin-bottom:10px;
+}
+h4 {
+    font-size:14px;
+}
+a, a:hover, a:link, a:active, a:visited {
+    color:#434440;
+}
+strong {
+    font-weight:bold;
+}
+
+table tr td,
+table tr th {
+    padding:6px;
+    border-collapse:collapse;
+    border:1px solid #D9D7D7;
+    vertical-align:middle;
+}
+table tr:nth-child(even) {
+    background-color:#F7F9F3;
+}
+table thead td {
+    font-weight:bold;
+}
+
+/* 
+	Form Elementst 
+*/
+
+legend {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+input[type="checkbox"] {
+    margin:4px 6px;
+}
+input, textarea, select {
+    display:block;
+    background:#F7F9F3;
+    border:1px solid #CDCCCB;
+    border-radius:5px;
+    padding:8px 15px;
+    resize: none;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    display:inline-block;
+    background:transparent;
+    border:none;
+    border-radius:0;
+    padding:0;
+}
+input[type="button"], input[type="submit"], .continue {
+    display:inline-block;
+    border:1px solid #B8B7B7;
+    border-radius:10px;
+    background-color:#F0F0F0;
+    background-image: -moz-linear-gradient(bottom, #B5B5B5, #ffffff);
+    background-image: -webkit-linear-gradient(bottom, #B5B5B5, #ffffff);
+    background-image: -ms-linear-gradient(bottom, #B5B5B5, #ffffff);
+    background-image: -o-linear-gradient(bottom, #B5B5B5, #ffffff);
+    background-image: linear-gradient(bottom, #B5B5B5, #ffffff);
+    padding:8px 20px;
+    color:#273305;
+    font-size:12px;
+    text-decoration:none;
+}
+input[type="button"]:hover, input[type="submit"]:hover, .continue:hover {
+    color:#7FB219;
+    background-color:#ffffff;
+    background-image: -moz-linear-gradient(bottom, #F0F0F0, #ffffff);
+    background-image: -webkit-linear-gradient(bottom, #F0F0F0, #ffffff);
+    background-image: -ms-linear-gradient(bottom, #F0F0F0, #ffffff);
+    background-image: -o-linear-gradient(bottom, #F0F0F0, #ffffff);
+    background-image: linear-gradient(bottom, #F0F0F0, #ffffff);
+}
+
+/* 
+	Helper Classes 
+*/
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+	display: block;
+}
+
+.new-window {
+    background-image:url('../assets/portal-icons.png');
+    background-repeat:no-repeat;
+    background-position: 0px -581px;
+    width: 17px;
+    height: 13px;
+    display: inline-block;
+}
+.note {
+    background:#BDBDBD;
+    font-size:11px;
+    color:#434440;
+    text-indent:12px;
+    line-height:22px;
+}
+.jsnote {
+    background:#BDBDBD;
+    font-size:11px;
+    color:#ffffff;
+    text-align:center;
+    line-height:32px;
+}
+.small {
+    font-size:11px;
+}
+
+
+/* 
+	Structure Classes 
+*/
+
+.column {
+    float:left;
+    display:block;
+    padding-right:28px;
+    overflow:auto;
+}
+    .column:last-of-type{
+        padding-right:0;
+    }
+    .column.last {
+        padding-right:0;
+    }
+
+.row {
+    display:block;
+    clear:both;
+}
+.content-box {
+    border:1px solid #D9D7D7;
+    border-radius:10px;
+    background:#ffffff;
+    padding:12px;
+    margin-bottom:10px;
+    overflow:auto;
+}
+
+/* 
+	Standalone Icons 
+*/
+
+.icon {
+    background-color:transparent;
+    background-image:url('../assets/portal-icons.png');
+    background-repeat:no-repeat;
+    padding:0 13px;
+    height:26px;
+    display:inline-block;
+    overflow:hidden;
+    text-indent:13px;
+    line-height:26px;
+}
+.icon.x { background-position:0 -196px; }
+
+.icon.visa { width:30px; height:34px; background-position:7px -1130px; }
+.icon.visa-dull { width:30px; height:34px; background-position:-65px -1130px; }
+.icon.mc { width:30px; height:34px; background-position:7px -1179px; }
+.icon.mc-dull { width:30px; height:34px; background-position:-65px -1179px; }
+.icon.discover { width:30px; height:34px; background-position:7px -1229px; }
+.icon.discover-dull { width:30px; height:34px; background-position:-65px -1229px; }
+.icon.amex { width:30px; height:34px; background-position:7px -1279px; }
+.icon.amex-dull { width:30px; height:34px; background-position:-65px -1279px; }
+
